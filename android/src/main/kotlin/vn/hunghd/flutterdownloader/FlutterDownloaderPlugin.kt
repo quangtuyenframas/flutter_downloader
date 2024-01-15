@@ -98,7 +98,6 @@ class FlutterDownloaderPlugin : MethodChannel.MethodCallHandler, FlutterPlugin {
             .setConstraints(
                 Constraints.Builder()
                     .setRequiresStorageNotLow(requiresStorageNotLow)
-                    .setRequiredNetworkType(if (allowCellular) NetworkType.CONNECTED else NetworkType.UNMETERED)
                     .build()
             )
             .addTag(TAG)
